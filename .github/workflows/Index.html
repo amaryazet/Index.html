@@ -1,1 +1,241 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maryam Saliu | Virtual Assistant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
 
+        body {
+            background: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #1a73e8, #0d47a1);
+            color: white;
+            border-radius: 0 0 30px 30px;
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Work Samples Section */
+        .work-samples {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 3rem 0;
+        }
+
+        .sample-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .sample-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .sample-image {
+            height: 200px;
+            background: #e3f2fd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sample-content {
+            padding: 1.5rem;
+        }
+
+        .sample-icon {
+            font-size: 3rem;
+            color: #1a73e8;
+        }
+
+        .badge {
+            background: #1a73e8;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin: 0.5rem 0;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            text-align: center;
+            padding: 4rem 0;
+            background: #f1f1f1;
+            border-radius: 30px;
+            margin-top: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #1a73e8;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 1rem;
+            transition: background 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Maryam Adenike Saliu</h1>
+            <p>Virtual Assistant & Operational Efficiency Expert</p>
+        </section>
+
+        <!-- Work Samples -->
+        <section class="work-samples">
+            <h2 style="grid-column: 1/-1; text-align: center; margin-bottom: 2rem;">Featured Work Samples</h2>
+            
+            <!-- Sample 1: Social Media Management -->
+            <div class="sample-card">
+                <div class="sample-image">
+                    <i class="fas fa-hashtag sample-icon"></i>
+                </div>
+                <div class="sample-content">
+                    <span class="badge">Social Media</span>
+                    <h3>Engagement Boost Campaign</h3>
+                    <p><strong>Client:</strong> Syntanext Technologies</p>
+                    <ul style="margin: 1rem 0; list-style: none;">
+                        <li>✓ 30% increase in engagement</li>
+                        <li>✓ 15% follower growth</li>
+                        <li>✓ Content calendar management</li>
+                    </ul>
+                    <p style="color: #666;">Tools: Meta Business Suite, Canva</p>
+                </div>
+            </div>
+
+            <!-- Sample 2: Email Marketing -->
+            <div class="sample-card">
+                <div class="sample-image">
+                    <i class="fas fa-envelope-open-text sample-icon"></i>
+                </div>
+                <div class="sample-content">
+                    <span class="badge">Email Marketing</span>
+                    <h3>Lead Conversion Campaign</h3>
+                    <p><strong>Client:</strong> Syntanext Technologies</p>
+                    <ul style="margin: 1rem 0; list-style: none;">
+                        <li>✓ 20% conversion rate increase</li>
+                        <li>✓ A/B tested subject lines</li>
+                        <li>✓ List segmentation strategy</li>
+                    </ul>
+                    <p style="color: #666;">Tools: Mailchimp, HubSpot</p>
+                </div>
+            </div>
+
+            <!-- Sample 3: CRM Optimization -->
+            <div class="sample-card">
+                <div class="sample-image">
+                    <i class="fas fa-headset sample-icon"></i>
+                </div>
+                <div class="sample-content">
+                    <span class="badge">Customer Support</span>
+                    <h3>CRM Workflow Automation</h3>
+                    <p><strong>Client:</strong> Syntanext Technologies</p>
+                    <ul style="margin: 1rem 0; list-style: none;">
+                        <li>✓ 95% ticket resolution rate</li>
+                        <li>✓ 40% faster response time</li>
+                        <li>✓ Knowledge base creation</li>
+                    </ul>
+                    <p style="color: #666;">Tools: Zendesk, Freshdesk</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-grid">
+            <div class="skill-card">
+                <h3>Core Skills</h3>
+                <ul style="margin: 1rem 0;">
+                    <li>✔️ Customer Relationship Management</li>
+                    <li>✔️ Social Media Strategy</li>
+                    <li>✔️ Email Marketing Automation</li>
+                    <li>✔️ Project Coordination</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Technical Toolkit</h3>
+                <ul style="margin: 1rem 0;">
+                    <li>🔧 Zendesk | HubSpot</li>
+                    <li>📊 Mailchimp | Google Analytics</li>
+                    <li>📅 Google Workspace | Trello</li>
+                    <li>💻 Microsoft Office Suite</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <h2>Ready to Streamline Your Operations?</h2>
+            <a href="mailto:maryamsaliu2000@gmail.com" class="cta-button">
+                <i class="fas fa-paper-plane"></i> Send Message
+            </a>
+            <div style="margin-top: 1.5rem;">
+                <p>📞 +2347035551024</p>
+                <p>📍 Ibadan, Nigeria | 🌍 Remote Worldwide</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+```
