@@ -28,10 +28,10 @@ A modern, responsive portfolio website showcasing professional virtual assistant
 ## Live Demo 🌐
 
 Check out the live portfolio:  
-[https://amaryazet.github.io](https://amaryazet.github.io)
+[[https://amaryazet.github.io/Index.html/](https://amaryazet.github.io/Index.html/)]
 
 ## Installation 💻
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/amaryazet/portfolio.git
+git clone https://amaryazet.github.io/Index.html/
